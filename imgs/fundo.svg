@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="500" content-type="image/svg+xml" >
+
+  <defs>
+    <!-- <radialGradient id="gradient" cx="0" cy="0" r="3" fx="2" fy="2"> -->
+    <linearGradient id="gradient" x1="20%" y1="50%" x2="100%" y2="20%">
+      <stop offset="00%" stop-color="#0000ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00ff00" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+	<rect id="rect" x="150" y="100" width="600" height="300" stroke="white" stroke-width="0.5" fill="black" fill-opacity="0.2"></rect>
+        <line x1="0" y1="0" x2="150" y2="100" stroke="white" stroke-width="0.5" ></line>
+	<line x1="900" y1="0" x2="750" y2="100" stroke="white" stroke-width="0.5"></line> 
+        <line x1="0" y1="500" x2="150" y2="400" stroke="white" stroke-width="0.5" ></line>
+	<line x1="900" y1="500" x2="750" y2="400" stroke="white" stroke-width="0.5"></line> 
+
+  <circle fill="#999" cx="-50" cy="150" r="10" stroke="black" stroke-fill="0.5">
+    <animate id="o1" begin="0;o2.end" attributeName="cx" from="710" to="590" dur="2s" />
+    <animate  begin="0;o2.end" attributeName="cy" from="125" to="175" dur="2s" />
+    <animate id="ra" begin="0;o2.end" attributeName="r" from="10" to="5" dur="1s" />
+    <animate  begin="1s;ra.end" attributeName="r" from="5" to="10" dur="1s" />
+   </circle>
+  <circle  cx="650" cy="150" r="30" stroke="black" stroke-fill="0.5" fill="url(#gradient)">
+	<animate  begin="0;o2.end" attributeName="cx" from="650" to="653" dur="1s" />
+	<animate  begin="1s;ra.end" attributeName="cx" from="653" to="650" dur="1s" />
+	<animate  begin="2s;o1.end" attributeName="cx" from="650" to="647" dur="1s" />
+	<animate  begin="3s;ra1.end" attributeName="cx" from="647" to="650" dur="1s" />
+  </circle>
+  <circle fill="#999" cx="-50" cy="150" r="10" stroke="black" stroke-fill="0.5">
+    <animate id="o2" begin="o1.end" attributeName="cx" from="590" to="710" dur="2s" />
+    <animate  begin="o1.end" attributeName="cy" from="175" to="125" dur="2s" />
+    <animate id="ra1" begin="o1.end" attributeName="r" from="10" to="15" dur="1s" />
+    <animate  begin="1s;ra1.end" attributeName="r" from="15" to="10" dur="1s" />
+  </circle>
+
+<line x1="100" y1="433" x2="150" y2="400" stroke="blue" stroke-width="0.5" ></line>
+<rect x="100" y="383" width="50" height="50" stroke="white" stroke-width="0.5" fill="#0000cd" ></rect>
+<rect x="100" y="333" width="50" height="50" stroke="white" stroke-width="0.5" fill="#0000cd" ></rect>
+<polygon points="150, 333, 150, 383, 195, 355, 195, 305" style="fill:#008b8b;stroke:white;stroke-width:.5" />
+<polygon points="150, 333, 195, 305, 150, 305, 100, 333" style="fill:#3333cd;stroke:white;stroke-width:.5" />
+<rect x="150" y="383" width="50" height="50" stroke="white" stroke-width="0.5" fill="#0000cd" ></rect>
+<polygon points="200, 383, 200, 433, 245, 400, 245, 355" style="fill:#008b8b;stroke:white;stroke-width:.5" />
+<polygon points="200, 383, 245, 355, 195, 355, 150, 383" style="fill:#3333cd;stroke:white;stroke-width:.5" />
+
+  <circle fill="#fff" cx="150" cy="0" r="10" stroke="black" stroke-fill="0.5">
+    <animate id="b1" begin="0;b6.end" attributeName="cy" from="0" to="310" dur="2s" />
+    <animate id="b2" begin="2;b1.end" attributeName="cy" from="310" to="270" dur=".5s" />
+    <animate begin="2;b1.end" attributeName="cx" from="150" to="175" dur=".5s" />
+    <animate id="b3" begin="2.5;b2.end" attributeName="cy" from="270" to="360" dur="1s" />
+    <animate begin="2.5;b2.end" attributeName="cx" from="175" to="200" dur="1s" />
+    <animate id="b4" begin="3.5;b3.end" attributeName="cy" from="360" to="320" dur="0.5s" />
+    <animate begin="3.5;b3.end" attributeName="cx" from="200" to="225" dur="0.5s" />
+    <animate id="b5" begin="4;b4.end" attributeName="cy" from="320" to="410" dur="1s" />
+    <animate begin="4;b4.end" attributeName="cx" from="225" to="250" dur="1s" />
+    <animate id="b6" begin="5;b5.end" attributeName="cy" from="410" to="410" dur="3s" />
+    <animate begin="5;b5.end" attributeName="cx" from="250" to="800" dur="3s" />
+  </circle>
+  
+        <rect x="0" y="0" width="40" height="40" stroke="black" stroke-width="1" fill-opacity="0">
+
+                <animate id="a1" attributeName="x" from="0" to="600" dur="2s" begin="0s;an.end"  />
+                <animate attributeName="y" from="500" to="200" dur="2s" begin="0s;an.end" />
+
+
+                <animate id="a2" attributeName="x" from="600" to="710" dur="1s" begin="2s;a1.end" />
+                <animate attributeName="y" from="200" to="150" dur="1s" begin="2s;a1.end" />
+
+
+                <animate id="a3" attributeName="x" from="710" to="710" dur="1s" begin="3s;a2.end" />
+                <animate attributeName="y" from="150" to="150" dur="1s" begin="3s;a2.end" />
+
+
+		<animate id="a4" attributeName="width" from="40" to="30" dur=".2s" begin="3s;a2.end"/>
+		<animate attributeName="height" from="40" to="30" dur=".2s" begin="3s;a2.end"/>
+
+
+		<animate id="a5" attributeName="x" from="710" to="715" dur=".2s" begin="3s;a2.end"/>
+		<animate attributeName="y" from="150" to="155" dur=".2s" begin="3s;a2.end"/>
+
+
+                <animate id="a6" attributeName="x" from="710" to="150" dur="2s" begin="4s;a3.end" />
+                <animate attributeName="y" from="150" to="350" dur="2s" begin="4s;a3.end" />
+
+
+                <animate id="a7" attributeName="x" from="150" to="150" dur="1s" begin="6s;a6.end" />
+                <animate attributeName="y" from="350" to="350" dur="1s" begin="6s;a6.end" />
+
+		<animate id="a8" attributeName="width" from="40" to="30" dur=".2s" begin="6s;a6.end"/>
+		<animate attributeName="height" from="40" to="30" dur=".2s" begin="6s;a6.end"/>
+
+
+                <animate id="a9" attributeName="x" from="150" to="155" dur=".2s" begin="6s;a6.end" />
+                <animate attributeName="y" from="350" to="355" dur=".2s" begin="6s;a6.end" />
+
+
+		<animate id="aa" attributeName="x" from="150" to="0" dur="3s" begin="7s;a7.end" />
+                <animate attributeName="y" from="350" to="500" dur="3s" begin="7s;a7.end" />
+                </rect>
+	    <rect x="170" y="170" width="560" height="200" stroke="black" stroke-width="0" fill="url(#gradient)" fill-opacity="0">
+		
+		<animate  attributeName="stroke-dasharray" from="2,2" to="1" dur="2s" begin="4s;a3.end" />
+		<animate  attributeName="stroke-width" from="1" to="1" dur="2s" begin="4s;a3.end" />
+		<animate  attributeName="stroke" from="blue" to="blue" dur="2s" begin="4s;a3.end" />
+		<animate  attributeName="width" from="0" to="560" dur="2s" begin="4s;a3.end" />
+		<animate attributeName="height" from="0" to="200" dur="2s" begin="4s;a3.end" />
+		<animate attributeName="x" from="730" to="170" dur="2s" begin="4s;a3.end" />
+		<animate attributeName="y" from="170" to="170" dur="2s" begin="4s;a3.end" />
+		<animate  attributeName="stroke-width" from="1" to="1" dur="2s" begin="6s;a6.end" />
+		<animate id="ab" attributeName="fill-opacity" from="0" to="0.8" dur="1s" begin="6s;a6.end" />
+		<animate id="an" attributeName="fill-opacity" from="0.8" to="0.8" dur="3s" begin="7s;ab.end"  />
+		<animate  attributeName="stroke-width" from="1" to="1" dur="3s" begin="7s;ab.end" />
+
+            </rect>
+
+	    <line x1="0" y1="0" x2="900" y2="500" stroke="black" stroke-width="0.5">
+                <animate attributeName="y1" from="520" to="220" dur="2s" begin="0s;an.end" />
+                <animate attributeName="y2" from="520" to="220" dur="2s" begin="0s;an.end" />
+
+                <animate attributeName="y1" from="220" to="170" dur="1s" begin="2s;a1.end" />
+                <animate attributeName="y2" from="220" to="170" dur="1s" begin="2s;a1.end" />
+
+                <animate attributeName="y1" from="170" to="170" dur="1s" begin="3s;a2.end;" />
+                <animate attributeName="y2" from="170" to="170" dur="1s" begin="3s;a2.end" />
+
+                <animate attributeName="y1" from="170" to="370" dur="2s" begin="4s;a3.end" />
+                <animate attributeName="y2" from="170" to="370" dur="2s" begin="4s;a3.end" />
+
+                <animate attributeName="y1" from="370" to="370" dur="1s" begin="6s;a6.end" />
+                <animate attributeName="y2" from="370" to="370" dur="1s" begin="6s;a6.end" />
+
+                <animate attributeName="y1" from="370" to="520" dur="3s" begin="7s;a7.end" />
+                <animate attributeName="y2" from="370" to="520" dur="3s" begin="7s;a7.end" />
+
+            </line>
+            <!-- linha vertical -->
+            <line x1="0" y1="0" x2="0" y2="500" stroke="black" stroke-width="0.5">
+                <animate attributeName="x1" from="20" to="620" dur="2s" begin="0s;an.end" />
+                <animate attributeName="x2" from="20" to="620" dur="2s" begin="0s;an.end" />
+
+                <animate attributeName="x1" from="620" to="730" dur="1s" begin="2s;a1.end" />
+                <animate attributeName="x2" from="620" to="730" dur="1s" begin="2s;a1.end" />		
+		
+		<animate attributeName="x1" from="730" to="730" dur="1s" begin="3s;a2.end" />
+                <animate attributeName="x2" from="730" to="730" dur="1s" begin="3s;a2.end" />
+
+		<animate attributeName="x1" from="730" to="170" dur="2s" begin="4s;a3.end" />
+                <animate attributeName="x2" from="730" to="170" dur="2s" begin="4s;a3.end" />
+
+                <animate attributeName="x1" from="170" to="170" dur="1s" begin="6s;a6.end" />
+                <animate attributeName="x2" from="170" to="170" dur="1s" begin="6s;a6.end" />			
+
+                <animate attributeName="x1" from="170" to="20" dur="3s" begin="7s;a7.end" />
+                <animate attributeName="x2" from="170" to="20" dur="3s" begin="7s;a7.end" />
+
+            </line>
+
+
+
+	
+
+        </svg>
