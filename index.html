@@ -14,16 +14,22 @@
     <div class="menu-suspenso">
         <p class="menu-content" onclick="fechaMenu()">☰</p>
     </div>
-    <aside class="menu">
-        <nav>
-            <ul>
-                <li><a href="#intro" onclick="ocultaMenu()">Intro</a></li>
-                <li><a href="#perfil" onclick="ocultaMenu()">Perfil</a></li>
-                <li><a href="#top3" onclick="ocultaMenu()">Top 3</a></li>
-                <li><a href="#galeria" onclick="ocultaMenu()">Galeria</a></li>
-                <li><a href="#contato" onclick="ocultaMenu()">Contato</a></li>
-            </ul>
-        </nav>
+    <aside>
+        <div class="menu">
+            <div class="container-logo-menu">
+                <img src="imgs/icone-ALPHA-laranja.png" alt="Logotipo da Engedev" class="logo-menu">
+                <span class="text-logo">Engedev</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro" onclick="ocultaMenu()">Intro</a></li>
+                    <li><a href="#perfil" onclick="ocultaMenu()">Perfil</a></li>
+                    <li><a href="#top3" onclick="ocultaMenu()">Top 3</a></li>
+                    <li><a href="#galeria" onclick="ocultaMenu()">Galeria</a></li>
+                    <li><a href="#contato" onclick="ocultaMenu()">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </aside>
 
     <div class="janela-transparente">
@@ -37,66 +43,91 @@
                     <img src="imgs/icone-ALPHA.png" alt="Logotipo da Engedev" class="logotipo">
                     <h1>Engedev</h1>
                 </div>
-                <br><br><br>
+                <br><br>
                 <p class="text-destaque">Simplifique seus projetos de Engenharia</p>
                 <p>Conheça as ferramentas para projetos de sistemas de infraestrutura urbana da Engedev!</p>
             </div>
-            <div class="section-1-img"><img src="imgs/LOGO-ENG-HACK-FINAL-ALPHA.png" alt="Logo marca da Página"></div>
+            <div class="section-1-img"><img src="imgs/AREDE/AREDE-01.png" alt="Logo marca da Página"></div>
         </div>
     </section>
-    <section class="section-2" id="perfil">
+    <div id="perfil">
+
+    </div>
+    <section class="section-2">
         <div class="container-sec-2">
-            <div class="section-2-img"><img src="imgs/fotoPBW.jpg" alt="teste"></div>
+            <div class="section-2-img"><img src="imgs/AREDE/AREDE-02.png" alt="teste"></div>
             <div class="section-2-content">
-                <h2>Perfil</h2>
-                <p class="p-justificado"> Engenheiro Civil com Especialização em Estruturas de Concreto Armado,
-                    atuante na área de Projetos de Sistemas de Abastecimento de Água,
-                    Esgotamento Sanitário e Drenagem de Águas Pluviais.
+                <h2>A-REDE</h2>
+                <p class="p-justificado"> O A-REDE é um software que trabalha embarcado no AutoCAD, ou seja, usa a
+                    interface de desenho do AutoCAD para auxiliar no desenvolvimento de projetos de distribuição de
+                    água. O objetivo principal desse software é facilitar / automatizar o projeto de redes de
+                    distribuição de água.
                 </p>
+                <!-- <p class="p-justificado">
+                    Existem poucos softwares de projeto de redes de água, a maioria desses é relativamente cara e não atende todas as necessidades do projetista. Contudo, há um software bas tante conhecido no meio, chamado EPANET. O EPANET é gratuito e serve para simulação
+hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
+                </p> -->
                 <p class="p-justificado">
-                    Comecei a programar no final dos anos 90 com <strong>VB</strong>, <strong>Pascal</strong> e
-                    <strong>Delphi</strong>. Na Universidade tive contato com a linguagem <strong>C</strong>.
-                    Posteriormente, trabalhando com Engenharia comecei a programar em <strong>VBA</strong> (para Excel e
-                    AutoCAD), <strong>VB.NET</strong> e <strong>Dynamo</strong>. Estou cursando <strong>ADS</strong> e
-                    desenvolvendo em
-                    <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> além de
-                    <strong>Python</strong>.
-                </p>
-                <p class="p-justificado">
-                    Busco desenvolver soluções aliando meus conhecimentos de Engenharia e Programação. Atualmente, tenho
-                    um canal no YouTube no qual compartilho esses conhecimentos.
+                    O A-REDE integra a interface gráfica do AutoCAD com o motor de cálculo do EPANET tornando-se uma
+                    ferramenta bastante eficiente para projetos de redes de distribuição de água, basicamente é uma
+                    versão do EPANET para AutoCAD.
                 </p>
             </div>
         </div>
     </section>
     <section class="section-1" id="top3">
         <div class="container-sec-3">
-            <div class="section-3-content-1">
+            <div class="section-3-content">
                 <h2>SESCAD</h2>
-                <p class="p-justificado">Sistema CAD para Projetos de Esgotamento Sanitário. Fui co-autor desse Sistema
-                    que auxilia no projeto
-                    de Redes de Esgotamento Sanitário. Essa ferramenta é utilizada até hoje pela empresa Caesb. O SESCAD
-                    foi desenvolvido em VB.NET.</p>
+                <p class="p-justificado"> O SESCAD (Sistema CAD para Esgotamento Sanitário) é um software que trabalha
+                    embarcado no AutoCAD, ou seja, usa a interface de desenho do AutoCAD para auxiliar no
+                    desenvolvimento de projetos de redes coletoras de esgoto. O objetivo principal desse software é
+                    facilitar /
+                    automatizar o projeto de redes coletoras de esgoto sanitário.
+                </p>
+                <!-- <p class="p-justificado">
+                        No mercado brasileiro há poucos softwares específicos para elaboração de projeto de redes de esgotamento sanitário. Além disso, a maioria desses programas não atende as principai s necessidades do projetista de redes de coleta de esgoto, sendo que, alguns desses softwares servem apenas como auxílio para desenho.
+                    </p> -->
+                <p class="p-justificado">
+                    O grande diferencial do SESCAD em relação a outros softwares é a automatização de cálculos
+                    topográficos e hidráulicos com assimilação instantânea ao desenho da rede coletora, ou seja, à
+                    medida que vamos desenhando a rede a mesma está sendo dimensionada. Além disso, é possível simular
+                    vários cenários alterando dados de ocupação da área, podemos exportar quantitativos para pla nilhas
+                    para elaboração de orçamentos.
+                </p>
             </div>
-            <div class="section-3-content-2">
-                <h2>A-REDE</h2>
-                <p class="p-justificado">Criei esse plug-in do AutoCAD para fazer projetos de redes de distribuição de
-                    água. Essa ferramenta
-                    funciona como um EPANET para AutoCAD, além de possuir outras fucionalidades.</p>
-            </div>
-            <div class="section-3-content-3">
+            <div class="section-3-img"><img src="imgs/SESCAD/SESCAD-05.png" alt="teste"></div>
+        </div>
+        </div>
+    </section>
+    <section class="section-2" id="perfil">
+        <div class="container-sec-2">
+            <div class="section-2-img"><img src="imgs/CADAMS/CADAMS-01.png" alt="teste"></div>
+            <div class="section-2-content">
                 <h2>CADAMS</h2>
-                <p class="p-justificado">Seu objetivo é fazer análises de estabilidade de estruturas hidráulicas de
-                    concreto por gravidade. Esta ferramenta utiliza funções do AutoCAD para
-                    obter dados geométricos dessas estruturas e fazer análise de sua estabilidade, considerando
-                    carregamentos hidroestáticos, hidrodinâmicos e Sismos.</p>
+                <p class="p-justificado"> O Objetivo desta ferramenta é fazer análises de estabilidade de estruturas
+                    hidráulicas de concreto por gravidade. Esta ferramenta utiliza funções do AutoCAD para obter dados
+                    geométricos dessas estruturas e fazer análise de sua estabilidade, considerando carregamentos
+                    hidroestáticos, hidrodinâmicos e Sismos.
+                </p>
             </div>
+        </div>
+    </section>
+    <section class="depoimento">
+        <div class="depoimento-container">
+            <div class="depoimento-container-content">
+                <span>"A tecnologia da Engedev é incrível. Ajudou muito na execução dos meus projetos!"</span>
+            </div>
+            <div class="depoimento-container-img">
+                <img src="imgs/fotoPBW.jpg" alt="teste">
+                <span>Alessandro Feitosa</span>
+            </div>
+
         </div>
     </section>
     <section class="section-2" id="galeria">
         <div class="container-sec-4">
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-01.png" alt="Imagem SESCAD 1">
-            </div>
+            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-01.png" alt="Imagem SESCAD 1"></div>
             <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-02.png" alt="Imagem SESCAD 2"></div>
             <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-03.png" alt="Imagem SESCAD 3"></div>
             <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-04.png" alt="Imagem SESCAD 4"></div>
