@@ -53,7 +53,7 @@ aside {
     grid-template-columns: 1fr 1fr;
     justify-content: left;
     margin: 0 auto;
-    width: 110rem;
+    max-width: 110rem;
 }
 
 /* Barra de navegação */
@@ -65,8 +65,8 @@ aside nav ul {
     font-size: 2rem;
     list-style: none;
     align-items: center;
-    /* border-bottom: 0.1rem solid #000; */
     height: 8rem;
+    padding-right: 2rem;
 }
 
 /* Botões da navegação */
@@ -108,22 +108,40 @@ aside nav ul a:hover::after {
     bottom: 1rem;
 }
 
+.container-logo-menu {
+    width: 55rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-logo {
+    color: var(--menu-font-color);
+    font-size: 3.5rem;
+}
+
+.logo-menu {
+    width: 5rem;
+    margin: .5rem;
+}
+
 h2 {
     font-family: var(--font-secondary);
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
 .p-justificado {
     text-align: justify;
     text-indent: 4rem;
+    font-size: 1.8rem;
+    color: #888;
 }
 
 .text-destaque {
     font-family: var(--font-secondary);
     font-size: 5rem;
-    text-align: left;
+    text-align: justify;
     font-weight: 800;
 }
 
@@ -144,26 +162,7 @@ h2 {
     border: 0.1rem solid var(--first-color);
 }
 
-.container-logo-menu {
-    /* position: absolute; */
-    width: 55rem;
-    /* z-index: 10; */
-    /* margin-left: 22vw; */
-    display: flex;
-    align-items: center;
-    /* background-color: green; */
-    /* margin-right: 22vw; */
-}
 
-.text-logo {
-    color: var(--menu-font-color);
-    font-size: 3.5rem;
-}
-
-.logo-menu {
-    width: 5rem;
-    margin: .5rem;
-}
 
 /* -------------- MENU --------------- */
 
@@ -223,7 +222,6 @@ h2 {
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
-
     /* background-attachment: fixed; */
 }
 
@@ -233,6 +231,10 @@ h2 {
 }
 
 /* -------------- SEÇÃO 1 - INTRO --------------- */
+
+#perfil {
+    margin-bottom: 7rem;
+}
 
 /* -------------- SEÇÃO 2 - FEATURES --------------- */
 .section-2 {
@@ -249,7 +251,7 @@ h2 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    justify-items: center;
     margin: 2rem auto;
 }
 
@@ -318,6 +320,8 @@ h2 {
     align-items: center;
 }
 
+
+
 .depoimento-container {
     height: 20rem;
     width: 110rem;
@@ -328,7 +332,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../imgs/Curve\ Line.svg);
+    /* background-image: url(../imgs/Curve\ Line.svg); */
 
     /* box-shadow: 1px 1px 1px #000; */
 }
@@ -378,7 +382,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    margin: 6rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 5rem;
 
 }
@@ -425,19 +429,91 @@ h2 {
 }
 
 /* -------------- SEÇÃO 4 - GALERIA - JANELA DE IMAGENS --------------- */
+/* -------------- SEÇÃO 4 - EQUIPE --------------- */
+.section-2-img1 {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.section-2-img1 img {
+    border-radius: 50%;
+    border: 1rem solid var(--fourth-color);
+    width: 90%;
+}
+
+.section-2-img2 {
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    margin-right: 200px;
+    margin-left: 20px;
+    ;
+}
+
+.section-2-img2 img {
+    border-radius: 50%;
+    border: 1rem solid var(--fourth-color);
+    width: 90%;
+}
+
+/* -------------- FORMULÁRIO --------------- */
+.form {
+    height: 40rem;
+    width: 110rem;
+    font-size: 2rem;
+    background-image: url(../imgs/Wave\ \(1\).svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    border: 1px solid #000;
+}
+
+form {
+    text-align: center;
+    padding: 2rem;
+}
+
+.input-text {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    width: 40rem;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.input-button {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    width: 10rem;
+}
+
+/* -------------- FORMULÁRIO --------------- */
 
 /* -------------- FOOTER --------------- */
 footer {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     font-size: 1.5rem;
-    height: 10rem;
+    height: 30rem;
     text-align: center;
-    background-color: var(--ligth-gray-color);
+    background-color: var(--second-color);
+    border: 1px solid #000;
+    padding: 1rem;
 }
 
 .container-contato {
-    background-color: var(--ligth-gray-color);
+    background-color: var(--second-color);
 }
 
 footer a {
