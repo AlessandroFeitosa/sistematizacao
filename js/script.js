@@ -26,12 +26,14 @@ function showMenu(x) {
 
 // Abre janela de imagens da galeria
 function abreJanela() {
-    const botao = document.querySelectorAll(".section-4-img");
+    const botao = document.querySelectorAll(".section-galeria-img");
     const janelaTransparente = document.querySelector(".janela-transparente");
     const janelaImagem = document.querySelector(".janela-imagem");
     for (let i = 0; i < botao.length; i++) {
         botao[i].addEventListener("click", function () {
-            janelaTransparente.style.display = 'block';
+            janelaTransparente.style.display = 'flex';
+            janelaTransparente.style.justifyContent = 'center';
+            janelaTransparente.style.alintItems = 'center';
             janelaImagem.src = selecionaImagem(i);
         });
     }
@@ -74,9 +76,32 @@ function vigiaTela() {
     x.addListener(showMenu);
 }
 
+// Valida informações do formulário
+function validaFormulario() {
+    let formulario = document.querySelector('.form');
+    formulario.addEventListener('submit', e => {
+        e.preventDefault();
+        let inputNome = document.getElementById('input-Nome');
+        let inputEmail = document.getElementById('input-email');
+        let inputCidade = document.getElementById('input-Cidade');
+        let inputEstado = document.getElementById('combo-Estado');
+        console.log(inputEstado.value);
+        if (inputNome.value === '' || inputEmail.value === '' || inputCidade.value === '' || inputEstado.value === '') {
+            alert('Preencha todos os campos!');
+        } else {
+            alert('Inscrição realizada com sucesso!');
+            inputNome.value = '';
+            inputEmail.value = '';
+            inputCidade.value = '';
+            inputEstado.value = '';
+        };
+    });
+}
+
 vigiaTela();
 abreJanela();
 fechaJanela();
+validaFormulario();
 
 
 

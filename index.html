@@ -7,25 +7,33 @@
     <meta content-type="application/xhtml+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engedev</title>
+    <link rel="shotcut icon" href="imgs/icone-ALPHA-laranja.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+    <!-- Menu suspenso -->
     <div class="menu-suspenso">
         <p class="menu-content" onclick="fechaMenu()">☰</p>
     </div>
+    <!-- Menu -->
     <aside>
+        <!-- div para comportar o menu -->
         <div class="menu">
+            <!-- div para comportar a logomarca no menu -->
             <div class="container-logo-menu">
+                <!-- logotipo -->
                 <img src="imgs/icone-ALPHA-laranja.png" alt="Logotipo da Engedev" class="logo-menu">
+                <!-- nome -->
                 <span class="text-logo">Engedev</span>
             </div>
+            <!-- barra de navegação -->
             <nav>
                 <ul>
                     <li><a href="#intro" onclick="ocultaMenu()">Intro</a></li>
-                    <li><a href="#perfil" onclick="ocultaMenu()">Perfil</a></li>
-                    <li><a href="#top3" onclick="ocultaMenu()">Top 3</a></li>
+                    <li><a href="#produtos" onclick="ocultaMenu()">Produtos</a></li>
                     <li><a href="#galeria" onclick="ocultaMenu()">Galeria</a></li>
+                    <li><a href="#equipe" onclick="ocultaMenu()">Equipe</a></li>
                     <li><a href="#contato" onclick="ocultaMenu()">Contato</a></li>
                 </ul>
             </nav>
@@ -34,37 +42,42 @@
     <div class="janela-transparente">
         <img class="janela-imagem">
     </div>
-    <section class="section-1" id="intro">
-        <div class="container-sec-1">
-            <div class="section-1-content">
+    <!-- Seção da intro -->
+    <section class="section-intro" id="intro">
+        <div class="container-intro">
+            <div class="section-intro-content">
                 <div class="container-logo">
                     <img src="imgs/icone-ALPHA.png" alt="Logotipo da Engedev" class="logotipo">
-                    <h1>Engedev</h1>
+                    <span class="engedev">Engedev</span>
                 </div>
-                <br><br>
+                <br>
                 <p class="text-destaque">Simplifique seus projetos de Engenharia</p>
-                <p>Conheça as ferramentas para projetos de sistemas de infraestrutura urbana da Engedev!</p>
+                <p>Conheça as ferramentas para projetos de sistemas de infraestrutura urbana da
+                    Engedev!</p>
+                <abbr title="Baixe o App da Engedev! Disponível na App Store e na Google Play"><img
+                        src="imgs/IMG_APP.png" alt="Imagem APP"></abbr>
             </div>
-            <div class="section-1-img"><img src="imgs/AREDE/AREDE-01.png" alt="Logo marca da Página"></div>
+            <div class="section-intro-img"><img src="imgs/BANNERS/BANNER-INTRO.png" alt="Print da tela"></div>
         </div>
     </section>
-    <div id="perfil">
-
+    <!-- Título h1 -->
+    <span id="produtos"></span>
+    <div class="titulo">
+        <h1>
+            Produtos
+        </h1>
     </div>
-    <section class="section-2">
-        <div class="container-sec-2">
-            <div class="section-2-img"><img src="imgs/AREDE/AREDE-02.png" alt="teste"></div>
-            <div class="section-2-content">
+    <!-- Seção Produtos A-REDE -->
+    <section class="section-prod-1">
+        <div class="container-sec-prod-1">
+            <div class="section-prod-1-img"><img src="imgs/BANNERS/BANNER-A-REDE.png" alt="Print do A-REDE"></div>
+            <div class="section-prod-1-content">
                 <h2>A-REDE: Solução completa para projetos de abastecimento de água</h2>
                 <p class="p-justificado"> O A-REDE é um software que trabalha embarcado no AutoCAD, ou seja, usa a
                     interface de desenho do AutoCAD para auxiliar no desenvolvimento de projetos de distribuição de
                     água. O objetivo principal desse software é facilitar / automatizar o projeto de redes de
                     distribuição de água.
                 </p>
-                <!-- <p class="p-justificado">
-                    Existem poucos softwares de projeto de redes de água, a maioria desses é relativamente cara e não atende todas as necessidades do projetista. Contudo, há um software bas tante conhecido no meio, chamado EPANET. O EPANET é gratuito e serve para simulação
-hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
-                </p> -->
                 <p class="p-justificado">
                     O A-REDE integra a interface gráfica do AutoCAD com o motor de cálculo do EPANET tornando-se uma
                     ferramenta bastante eficiente para projetos de redes de distribuição de água, basicamente é uma
@@ -73,17 +86,15 @@ hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
             </div>
         </div>
     </section>
-    <section class="section-1" id="top3">
-        <div class="container-sec-3">
-            <div class="section-3-content">
+    <!-- Seção Produtos SESCAD -->
+    <section class="section-prod-2">
+        <div class="container-sec-prod-2">
+            <div class="section-prod-2-content">
                 <h2 style="text-align: right;">SESCAD: Ferramenta especializada em projetos de coleta de esgoto</h2>
                 <p class="p-justificado"> O SESCAD é um software que trabalha
                     embarcado no AutoCAD. O objetivo principal desse software é
                     facilitar / automatizar o projeto de redes coletoras de esgoto sanitário.
                 </p>
-                <!-- <p class="p-justificado">
-                        No mercado brasileiro há poucos softwares específicos para elaboração de projeto de redes de esgotamento sanitário. Além disso, a maioria desses programas não atende as principai s necessidades do projetista de redes de coleta de esgoto, sendo que, alguns desses softwares servem apenas como auxílio para desenho.
-                    </p> -->
                 <p class="p-justificado">
                     O grande diferencial do SESCAD é a automatização de cálculos
                     topográficos e hidráulicos com assimilação instantânea ao desenho da rede coletora, ou seja, à
@@ -92,14 +103,15 @@ hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
                     para elaboração de orçamentos.
                 </p>
             </div>
-            <div class="section-3-img"><img src="imgs/SESCAD/SESCAD-05.png" alt="teste"></div>
+            <div class="section-prod-2-img"><img src="imgs/BANNERS/BANNER-SESCAD.png" alt="Print do SESCAD"></div>
         </div>
         </div>
     </section>
-    <section class="section-2">
-        <div class="container-sec-2">
-            <div class="section-2-img"><img src="imgs/CADAMS/CADAMS-01.png" alt="teste"></div>
-            <div class="section-2-content">
+    <!-- Seção Produtos CADAMS -->
+    <section class="section-prod-3">
+        <div class="container-sec-prod-3">
+            <div class="section-prod-3-img"><img src="imgs/BANNERS/BANNER-CADAMS.png" alt="PRint do CADAMS"></div>
+            <div class="section-prod-3-content">
                 <h2>CADAMS: Análise de estabilidade de barragens</h2>
                 <p class="p-justificado"> O Objetivo desta ferramenta é fazer análises de estabilidade de estruturas
                     hidráulicas de concreto por gravidade. Esta ferramenta utiliza funções do AutoCAD para obter dados
@@ -109,44 +121,58 @@ hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
             </div>
         </div>
     </section>
+    <!-- Seção dempoimento -->
     <section class="depoimento">
         <div class="depoimento-container">
             <div class="depoimento-container-content">
                 <span>"A tecnologia da Engedev é incrível. Ajudou muito na execução dos meus projetos!"</span>
             </div>
             <div class="depoimento-container-img">
-                <img src="imgs/fotoPBW.jpg" alt="teste">
-                <span id="galeria">Alessandro Feitosa</span>
+                <img src="imgs/IMG_CUSTOMER.png" alt="Imagem do cliente">
+                <span>Alex Barander</span>
             </div>
-
         </div>
     </section>
-    <section class="section-2">
-        <div class="container-sec-4">
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-01.png" alt="Imagem SESCAD 1"></div>
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-02.png" alt="Imagem SESCAD 2"></div>
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-03.png" alt="Imagem SESCAD 3"></div>
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-04.png" alt="Imagem SESCAD 4"></div>
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-05.png" alt="Imagem SESCAD 5"></div>
-            <div class="section-4-img"><img src="imgs/SESCAD/T-SESCAD-06.png" alt="Imagem SESCAD 6"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-01.png" alt="Imagem A-REDE 1"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-02.png" alt="Imagem A-REDE 2"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-03.png" alt="Imagem A-REDE 3"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-04.png" alt="Imagem A-REDE 4"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-05.png" alt="Imagem A-REDE 5"></div>
-            <div class="section-4-img"><img src="imgs/AREDE/T-AREDE-06.png" alt="Imagem A-REDE 6"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-01.png" alt="Imagem CADAMS 1"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-02.png" alt="Imagem CADAMS 2"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-03.png" alt="Imagem CADAMS 3"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-04.png" alt="Imagem CADAMS 4"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-05.png" alt="Imagem CADAMS 5"></div>
-            <div class="section-4-img"><img src="imgs/CADAMS/T-CADAMS-06.png" alt="Imagem CADAMS 6"></div>
+    <!-- Seção Galeria -->
+    <span id="galeria"></span>
+    <div class="titulo">
+        <h1>
+            Galeria
+        </h1>
+    </div>
+    <section class="section-galeria">
+        <div class="container-sec-galeria">
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-01.png" alt="Imagem SESCAD 1"></div>
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-02.png" alt="Imagem SESCAD 2"></div>
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-03.png" alt="Imagem SESCAD 3"></div>
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-04.png" alt="Imagem SESCAD 4"></div>
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-05.png" alt="Imagem SESCAD 5"></div>
+            <div class="section-galeria-img"><img src="imgs/SESCAD/T-SESCAD-06.png" alt="Imagem SESCAD 6"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-01.png" alt="Imagem A-REDE 1"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-02.png" alt="Imagem A-REDE 2"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-03.png" alt="Imagem A-REDE 3"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-04.png" alt="Imagem A-REDE 4"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-05.png" alt="Imagem A-REDE 5"></div>
+            <div class="section-galeria-img"><img src="imgs/AREDE/T-AREDE-06.png" alt="Imagem A-REDE 6"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-01.png" alt="Imagem CADAMS 1"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-02.png" alt="Imagem CADAMS 2"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-03.png" alt="Imagem CADAMS 3"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-04.png" alt="Imagem CADAMS 4"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-05.png" alt="Imagem CADAMS 5"></div>
+            <div class="section-galeria-img"><img src="imgs/CADAMS/T-CADAMS-06.png" alt="Imagem CADAMS 6"></div>
         </div>
     </section>
-    <section class="section-2">
-        <div class="container-sec-2">
-            <div class="section-2-img1"><img src="imgs/fotoPBW.jpg" alt="teste"></div>
-            <div class="section-2-content">
+    <!-- Seção equipe -->
+    <span id="equipe"></span>
+    <div class="titulo">
+        <h1>
+            Equipe
+        </h1>
+    </div>
+    <section class="section-equipe">
+        <div class="container-sec-equipe">
+            <div class="section-equipe-img1"><img src="imgs/fotoPBW.jpg" alt="Imagem do CEO"></div>
+            <div class="section-equipe-content">
                 <p class="p-justificado"> Engenheiro Civil com Especialização em Estruturas de Concreto Armado,
                     atuante na área de Projetos de Sistemas de Abastecimento de Água,
                     Esgotamento Sanitário e Drenagem de Águas Pluviais.
@@ -159,41 +185,28 @@ hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
                 <p>Alessandro Feitosa - CEO da Engedev</p>
             </div>
         </div>
-    </section>
-    <section class="section-2">
-        <div class="container-sec-2">
-            <div class="section-2-content">
-                <p class="p-justificado"> Engenheiro Civil com Especialização em Estruturas de Concreto Armado,
-                    atuante na área de Projetos de Sistemas de Abastecimento de Água,
-                    Esgotamento Sanitário e Drenagem de Águas Pluviais.
-                </p>
+        <div class="container-sec-equipe">
+            <div class="section-equipe-content">
                 <p class="p-justificado">
-                    "Busco desenvolver soluções aliando meus conhecimentos de Engenharia e Programação. Atualmente,
-                    tenho
-                    um canal no YouTube no qual compartilho esses conhecimentos."
+                    "As ferramentas da Engedev são desenvolvidas para oferecer mais produtividade para projetos de
+                    Engenharia. Podemos customizar funções de acordo com a necessidade do cliente."
                 </p>
-                <p>Alessandro Feitosa - CEO da Engedev</p>
+                <p>Julia - Gerente de projetos</p>
             </div>
-            <div class="section-2-img2"><img src="imgs/fotoPBW.jpg" alt="teste"></div>
+            <div class="section-equipe-img2"><img src="imgs/IMG_GERENTE.png" alt="Imagem do Gerente"></div>
         </div>
-    </section>
-    <section class="section-2">
-        <div class="container-sec-2">
-            <div class="section-2-img1"><img src="imgs/fotoPBW.jpg" alt="teste"></div>
-            <div class="section-2-content">
-                <p class="p-justificado"> Engenheiro Civil com Especialização em Estruturas de Concreto Armado,
-                    atuante na área de Projetos de Sistemas de Abastecimento de Água,
-                    Esgotamento Sanitário e Drenagem de Águas Pluviais.
-                </p>
+        <div class="container-sec-equipe">
+            <div class="section-equipe-img1"><img src="imgs/IMG_DEV.png" alt="Imagem do Marketing"></div>
+            <div class="section-equipe-content">
                 <p class="p-justificado">
-                    "Busco desenvolver soluções aliando meus conhecimentos de Engenharia e Programação. Atualmente,
-                    tenho
-                    um canal no YouTube no qual compartilho esses conhecimentos."
+                    "A Engedev fornece suporte técnico especializado para cada ferramenta. Pode contar com a
+                    colaboração dos nossos consultores técnicos."
                 </p>
-                <p>Alessandro Feitosa - CEO da Engedev</p>
+                <p>Rafael - Marketing</p>
             </div>
         </div>
     </section>
+    <!-- Seção formulário -->
     <section class="section-form" style="display: flex; justify-content: center;">
         <div class="form">
             <p>Inscreva-se para saber mais sobre nossos produtos!</p>
@@ -235,18 +248,28 @@ hidráulica, porém, o mesmo possui uma interface gráfica bastante limitada.
                     <option value="TO">TO</option>
                 </select>
                 <br>
-                <input type="button" value="Inscrever" class="input-button">
+                <input type="submit" value="Inscrever" class="input-button">
             </form>
         </div>
     </section>
+    <!-- Footer -->
     <footer id="contato">
         <div class="container-contato">
-            <h3>Contato:</h3>
-            <address>
-                <a href="mailto:engenhosamente@gmail.com"><img src="imgs/e-mail.png" alt="Logo e-mail"></a>
-                <a href="https://www.youtube.com/@engenhariahackeada4939" target="_blank"><img src="imgs/youtube.png"
-                        alt="Logo do YouTube" class="img-youtube"></a>
-            </address>
+            <div class="footer-logo">
+                <div class="container-logo">
+                    <img src="imgs/icone-ALPHA.png" alt="Logotipo da Engedev" class="logotipo">
+                    <span class="engedev">Engedev</span>
+                </div>
+                <p>Soluções para projetos de Engenharia.</p>
+            </div>
+            <div class="footer-contatos">
+                <address>
+                    <a href="#"><img src="imgs/telefone.png" alt="Logo telefone"></a>
+                    <a href="#"><img src="imgs/e-mail.png" alt="Logo e-mail"></a>
+                    <a href="#"><img src="imgs/instagran.png" alt="Logo instagran"></a>
+                </address>
+            </div>
+
         </div>
     </footer>
     <script src="js/script.js"></script>
