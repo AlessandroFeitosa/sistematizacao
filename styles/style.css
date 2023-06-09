@@ -50,6 +50,17 @@ html {
     color: var(--dark-gray-color);
 }
 
+.text-justificado {
+    color: var(--white-color);
+    text-align: justify;
+    background-color: var(--first-color);
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0 1.5rem 1.5rem 0;
+    box-shadow: 5px 5px 5px var(--black-color);
+}
+
 .text-destaque {
     font-family: var(--font-secondary);
     font-size: 5rem;
@@ -248,7 +259,7 @@ aside nav ul a:hover::after {
     flex-direction: column;
     justify-content: end;
     text-align: left;
-    align-items: left;
+    align-items: last baseline;
 }
 
 .logotipo {
